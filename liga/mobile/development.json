@@ -1,0 +1,183 @@
+{
+    "devServerProxy": [
+        {
+            "path"        : "/suggest",
+            "target"      : "https://ft20-mobbetru-bet-fl-lb-02.app-ses.com/",
+            "changeOrigin": true,
+            "secure"      : false
+        },
+        {
+            "path"        : "/files",
+            "target"      : "https://ft20-mobbetru-bet-fl-lb-02.app-ses.com/",
+            "changeOrigin": true,
+            "secure"      : false
+        }, {
+            "path"        : "/widgets",
+            "target"      : "https://ft20-mobbetru-bet-fl-lb-02.app-ses.com/",
+            "changeOrigin": true,
+            "secure"      : false
+        }, {
+            "path"        : "/promoLandings",
+            "target"      : "https://ft20-mobbetru-bet-fl-lb-02.app-ses.com/",
+            "changeOrigin": true,
+            "secure"      : false
+        }, {
+            "path"        : "/promoLandingsDev",
+            "target"      : "http://localhost:8080",
+            "changeOrigin": true,
+            "secure"      : false,
+            "pathRewrite" : {
+                "^/promoLandingsDev/000": "/"
+            }
+        }
+    ],
+    "devReduxLogger": {
+        "duration" : true,
+        "collapsed": true,
+        "diff"     : false
+    },
+    "server" : {
+        "host": "localhost",
+        "port": 4000
+    },
+    "transport" : {
+        "site" : {
+            "host": {
+                "server": "https://ft20-lsapi2-bet-fl-lb-01.app-ses.com",
+                "client": "https://ft20-lsapi2-bet-fl-lb-01.app-ses.com"
+            },
+            "protocol": {
+                "websocket": false,
+                "polling": false,
+                "rest": true
+            },
+            "credentials": "include"
+        },
+        "booker" : {
+            "host": {
+                "server": "https://ft20-ldsapi-bet-lb-03.app-ses.com",
+                "client": "https://ft20-ldsapi-bet-lb-03.app-ses.com"
+            },
+            "protocol": {
+                "websocket": true,
+                "polling": false,
+                "rest": true
+            }
+        },
+        "marka": {
+            "host": {
+                "server": "https://ft20-marka-dataapi-lb-01.app-ses.com",
+                "client": "https://ft20-marka-dataapi-lb-01.app-ses.com"
+            },
+            "protocol": {
+                "websocket": false,
+                "polling": false,
+                "rest": true
+            },
+            "channelTypeMethod": "/v1.0/content/channelType/",
+            "channelTypeId": "DA8A9A8B-813E-4D87-8A94-234579E721E7",
+            "tokenAuth": true,
+            "headers": {
+                "X-API-BranchId": 6827
+            }
+        },
+        "chatWatchers": {
+            "host": {
+                "server": "https://ln-dev-watchers-apihost.app-ses.com",
+                "client": "https://ln-dev-watchers-apihost.app-ses.com"
+            },
+            "protocol": {
+                "websocket": false,
+                "polling": false,
+                "rest": true
+            }
+        },
+        "hotBets" : {
+            "host": {
+                "server": "https://ft20-bets-api-lb-01.app-ses.com",
+                "client": "https://ft20-bets-api-lb-01.app-ses.com"
+            },
+            "protocol": {
+                "websocket": false,
+                "polling": false,
+                "rest": true
+            }
+        }
+    },
+    "widgets": {
+        "statistic": "https://s5dev.sir.sportradar.com/ligastavok/",
+        "statisticCybersport": "https://s5.sir.sportradar.com/ligastavokesports/",
+        "statistics": "https://ls.betradar.com/ls/livescore/?/ligastavok/ru/page",
+        "matchCenter": "http://p2-ligastavokru-01.dev.oscaryard.local:5001/ls/widgets/?/ligastavoksc/ru/Europe:Berlin/page/sportcenter/soccer",
+        "livetex": "https://livetex.sportsapi.ru/livetex/index.html",
+        "worldcup": "https://sportcenter.sir.sportradar.com/ligastavok/ru/worldcup",
+        "betradar": "https://widgets.sir.sportradar.com/a53878289ac56ca4694405e80659d93f/widgetloader",
+        "betradarStyle": "https://ft-ligastavokru-mr-cn-1.app-ses.com/files/file/461/theme.css",
+        "betRadarWCHSoccer": "http://p2-ligastavokru-01.dev.oscaryard.local:9090/ligastavok/ru/worldcup/standings.html"
+    },
+    "cookieHost": "localhost",
+    "gaId": "",
+    "gtmContainerId": "GTM-W5V5CW",
+    "todayPeriod": 10800000,
+    "sentryUrl": "https://3c7032b2ef224c6a82feb5fa2e75f903@sentry-dev.app-ses.com/2",
+    "push4site": "https://ligastavok.push4site.com/sdk",
+    "cashout": {
+        "wshost": "ws://ft20-cashout-api-01.app-ses.com:3228/ws",
+        "applicationName": "mobile"
+    },
+    "gib": {
+        "url": "",
+        "cid": "gib-w-ligastavok-test",
+        "backUrl": "/api/fl",
+        "gafUrl": "//ru.id.group-ib.com/id.html",
+        "forceFirstAlive": true
+    },
+    "promoId": "BFRU",
+    "promoIdVip": "BFRUVIP",
+    "sumsub": {
+        "useTestApi": true,
+        "levelName": "ligastavok",
+        "lang": "ru",
+        "script": "https://static.cyberity.ru/idensic/static/sns-websdk-builder.js"
+    },
+    "identificationSumsub": {
+        "useTestApi": true,
+        "levelName": "site-identification",
+        "lang": "ru-identification"
+    },
+    "jackpot": {
+        "localDateTime": ""
+    },
+    "mohio": {
+        "host": "https://games.staging.playbetman.com",
+        "operatorId": "6E958F19-043A-468A-A1DD-C2CBB0720692"
+    },
+    "fastTrack": "https://crm-lib-staging.fasttrack-solutions.com/loader/fasttrack-crm.js",
+    "fastTrackStyle": "https://ft20-ligastavokru-crm-cm-lb-01.app-ses.com/files/file/408/fast-track.css",
+    "betsHistory": {
+        "loaderDelay": 1000,
+        "draftsMonitorDelay": 300000,
+        "requestDelay": 10000,
+        "draftsCheckDelay": 2000
+    },
+    "cupisWidget": {
+        "src": "https://demo-widget.1cupis.ru",
+        "wid": "QWxhZGRpbjpvcGSlacOTgvSALz=="
+    },
+    "abTest": {
+        "hideRouletteTrueValue": 10
+    },
+    "kameleoon": {
+        "siteCode": "w7tvufyo6t",
+        "environment": "development"
+    },
+    "foquz": {
+        "src": "https://foquz.ru/widgets/poll/widget.js",
+        "testRoot": "https://foquz.ru"
+    },
+    "betBooster": {
+        "apiKey":"0wkk0l0pjv1jggj13j77uud9",
+        "lang": "ru",
+        "demo": "1"
+    }
+}
